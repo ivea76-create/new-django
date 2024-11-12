@@ -11,8 +11,9 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('ok')
-
-
-def hi(request):
-    return HttpResponse('hi')
+    # return HttpResponse('ok')
+    # request, template_name,(模板) context = None, content_type = None, status = None, using = None
+    context = {
+        'name': '双11有惊喜'
+    }
+    return render(request, 'book/index.html', context=context)
