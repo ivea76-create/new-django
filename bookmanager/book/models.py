@@ -5,7 +5,7 @@ class BookInfo(models.Model):  # 定义一个book类，相当于定义一个数�
     name = models.CharField(max_length=10)  # name= 相当于设置字段名 max_length与varchar()一样
 
     def __str__(self):
-        return self.name  
+        return self.name
 
 
 class PeopleInfo(models.Model):
